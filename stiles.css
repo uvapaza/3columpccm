@@ -1,0 +1,35 @@
+:root{
+    --Bright_orange: hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --Very_dark_cyan: hsl(179, 100%, 13%);
+
+    --Transparent_white : hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+    --Very_light_ gray : hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+
+    --size: 15px; /*font size*/
+    --fontld :'Lexend Deca', sans-serif; /*Weights: 400*/
+    --fontbig: 'Big Shoulders Display', sans-serif; /*Weights: 700*/
+    --fontspart: 'Spartan', sans-serif;
+    --fontws: 'Work Sans', sans-serif ;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+    height: 15px;
+    bottom: 0;
+    position: absolute;
+}
+
+body{
+    background: #ECE9E6;  
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); 
+}
