@@ -4,11 +4,12 @@
     --Very_dark_cyan: hsl(179, 100%, 13%);
 
     --Transparent_white : hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
-    --Very_light_ gray : hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+    --Very_light_gray : hsl(0, 0%, 95%); /*(background, headings, buttons)*/
 
     --size: 15px; /*font size*/
     --fontld :'Lexend Deca', sans-serif; /*Weights: 400*/
     --fontbig: 'Big Shoulders Display', sans-serif; /*Weights: 700*/
+    --fontbig2: 'Big Shoulders Display', cursive;
     --fontspart: 'Spartan', sans-serif;
     --fontws: 'Work Sans', sans-serif ;
 }
@@ -30,6 +31,49 @@
 }
 
 body{
-    background: #ECE9E6;  
-    background: linear-gradient(to right, #FFFFFF, #ECE9E6); 
+    background: #C9C6C3;  
+    background: linear-gradient(to right, #FFFFFF, #C9C6C3);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container_mother{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+.container_child{
+    padding: 30px 20px;
+}
+.container_child:first-child{
+    background-color: var(--Bright_orange);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.container_child:nth-child(2){
+    background-color: var(--Dark_cyan);
+}
+.container_child:last-child{
+    background-color: var(--Very_dark_cyan);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.text_child{
+    padding: 25px 0 80px 0 ;
+    color: var(--Very_light_gray);
+    font-family: var(--fontspart);
+    font-size: 15px;
+}
+p span{
+    color: var(--Very_light_gray);
+    display: block;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-family: var(--fontbig2);
+    font-weight: 700;
+    font-size: 35px;
+}
+.btn_cont_child{
+    padding-bottom: 30px;
 }
